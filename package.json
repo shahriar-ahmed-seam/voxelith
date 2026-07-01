@@ -1,0 +1,50 @@
+{
+  "name": "voxelith",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Voxelith — a real-time 3D voxel editor for the browser. Place, paint and carve cubes with symmetry, undo history, greedy meshing and OBJ/glTF export.",
+  "license": "MIT",
+  "author": "Shahriar Ahmed",
+  "homepage": "https://github.com/shahriar-ahmed-seam/voxelith",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shahriar-ahmed-seam/voxelith.git"
+  },
+  "keywords": [
+    "voxel",
+    "3d",
+    "editor",
+    "threejs",
+    "react-three-fiber",
+    "magicavoxel",
+    "webgl",
+    "react",
+    "greedy-meshing",
+    "modeling"
+  ],
+  "scripts": {
+    "fetch:images": "node scripts/fetch-images.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/fetch-images.mjs",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.183.1",
+    "@vitejs/plugin-react": "^5.1.4",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "three": "^0.183.2",
+    "three-stdlib": "^2.36.1",
+    "zustand": "^5.0.11"
+  }
+}

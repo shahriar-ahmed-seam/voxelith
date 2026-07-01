@@ -1,0 +1,35 @@
+{
+  "provider": "Unsplash",
+  "assets": [
+    {
+      "file": "hero.jpg",
+      "author": "Milad Fakurian",
+      "authorUrl": "https://unsplash.com/@fakurian?utm_source=voxelith&utm_medium=referral",
+      "source": "https://unsplash.com/photos/a-group-of-cubes-that-are-on-a-table-rPdxh2xl2-E?utm_source=voxelith&utm_medium=referral"
+    },
+    {
+      "file": "feature-build.jpg",
+      "author": "Vasilis Chatzopoulos",
+      "authorUrl": "https://unsplash.com/@vctz_lol?utm_source=voxelith&utm_medium=referral",
+      "source": "https://unsplash.com/photos/background-pattern-6lwyzronth8?utm_source=voxelith&utm_medium=referral"
+    },
+    {
+      "file": "feature-color.jpg",
+      "author": "Christina Rumpf",
+      "authorUrl": "https://unsplash.com/@rumpf?utm_source=voxelith&utm_medium=referral",
+      "source": "https://unsplash.com/photos/blue-white-green-and-red-textile-XWDMmk-yW7Q?utm_source=voxelith&utm_medium=referral"
+    },
+    {
+      "file": "feature-export.jpg",
+      "author": "Tristan Brave",
+      "authorUrl": "https://unsplash.com/@tristanbrave?utm_source=voxelith&utm_medium=referral",
+      "source": "https://unsplash.com/photos/a-computer-generated-image-of-a-lighthouse-on-a-small-island-_9Z71kyMAsc?utm_source=voxelith&utm_medium=referral"
+    },
+    {
+      "file": "showcase.jpg",
+      "author": "ilgmyzin",
+      "authorUrl": "https://unsplash.com/@ilgmyzin?utm_source=voxelith&utm_medium=referral",
+      "source": "https://unsplash.com/photos/a-group-of-purple-cubes-that-are-on-a-purple-background-doPQSnJf_iI?utm_source=voxelith&utm_medium=referral"
+    }
+  ]
+}

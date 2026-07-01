@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voxelith — Sculpt in Voxels, Right in Your Browser</title>
+  <meta name="description" content="Voxelith is a real-time 3D voxel editor. Place, paint and carve cubes on an infinite grid, with symmetry, undo history, greedy-meshed rendering and OBJ/glTF export — all in the browser." />
+  <meta name="theme-color" content="#0d0d1a" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Voxelith — 3D Voxel Sculptor" />
+  <meta property="og:description" content="Place, paint and carve voxels in real-time 3D. Symmetry, undo, greedy meshing and OBJ/glTF export." />
+  <meta property="og:image" content="/media/hero.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/landing/landing.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a class="nav__brand" href="/"><span class="nav__mark">◆</span> Voxelith</a>
+    <div class="nav__links">
+      <a href="#features">Features</a>
+      <a href="#engine">Engine</a>
+      <a href="#showcase">Showcase</a>
+      <a class="nav__cta" href="/editor">Open Editor →</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero__bg" style="background-image:url('/media/hero.jpg')"></div>
+    <div class="hero__scrim"></div>
+    <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero__content">
+      <span class="hero__eyebrow reveal">Real-time 3D · Powered by Three.js</span>
+      <h1 class="hero__title reveal">Sculpt worlds,<br /><span class="grad">one voxel at a time.</span></h1>
+      <p class="hero__lead reveal">
+        Voxelith is a browser-native voxel editor inspired by MagicaVoxel. Place, paint
+        and carve cubes on an infinite grid with mirror symmetry, full undo history and
+        a fast greedy-meshed renderer — then export to OBJ or glTF.
+      </p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--primary" href="/editor">Open the Editor</a>
+        <a class="btn btn--ghost" href="#features">See features</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div><b data-count="4">0</b><span>sculpting tools</span></div>
+        <div><b data-count="60">0</b><span>fps in 3D</span></div>
+        <div><b data-count="2">0</b><span>export formats</span></div>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#features" aria-label="Scroll"><span></span></a>
+  </header>
+
+  <section class="section" id="features">
+    <div class="section__head reveal">
+      <p class="kicker">A voxel studio in the browser</p>
+      <h2>Build, paint and carve — instantly.</h2>
+      <p class="sub">Everything you need to model in voxels, with a clean interface and
+        no download. Point, click, and watch your model take shape.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card card--wide reveal">
+        <div class="card__media" style="background-image:url('/media/feature-build.jpg')"></div>
+        <div class="card__body">
+          <h3>Place, erase, paint & pick</h3>
+          <p>Four core tools with keyboard shortcuts. Build up geometry, carve it back,
+            repaint faces and eyedrop colors — all directly on the 3D model.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__icon">🪞</div>
+        <h3>Mirror symmetry</h3>
+        <p>Model half, get the whole — X and Z axis symmetry for perfect builds.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__icon">↩️</div>
+        <h3>Full undo history</h3>
+        <p>Unlimited undo/redo so you can experiment fearlessly.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__icon">🎨</div>
+        <h3>Rich color palette</h3>
+        <p>A curated palette plus a custom color picker for any hue you need.</p>
+      </article>
+
+      <article class="card card--wide reveal">
+        <div class="card__media card__media--sm" style="background-image:url('/media/feature-export.jpg')"></div>
+        <div class="card__body">
+          <h3>Export to OBJ & glTF</h3>
+          <p>Take your creation anywhere. Voxelith writes clean, greedy-meshed geometry
+            ready for Blender, game engines and 3D printing pipelines.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__icon">🧭</div>
+        <h3>Orbit, pan & zoom</h3>
+        <p>Fluid camera controls to inspect your model from any angle.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="engine" id="engine">
+    <div class="engine__inner reveal">
+      <p class="kicker">Under the hood</p>
+      <h2>Fast meshing. Clean geometry.</h2>
+      <div class="engine__grid">
+        <div><b>Greedy meshing</b><span>Merges voxel faces into minimal triangles</span></div>
+        <div><b>Three.js</b><span>Hardware-accelerated WebGL rendering</span></div>
+        <div><b>R3F</b><span>React-three-fiber scene graph</span></div>
+        <div><b>Zustand</b><span>Instant, reactive editor state</span></div>
+        <div><b>Undo stack</b><span>Immutable snapshots for time travel</span></div>
+        <div><b>Exporters</b><span>Hand-written OBJ & glTF writers</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="showcase" id="showcase">
+    <div class="showcase__media" style="background-image:url('/media/showcase.jpg')"></div>
+    <div class="showcase__scrim"></div>
+    <div class="showcase__content reveal">
+      <h2>From a single cube<br />to a whole scene.</h2>
+      <p>Start with an empty grid and block out a character, a building or a spaceship —
+        then export it and bring it to life anywhere.</p>
+      <a class="btn btn--primary" href="/editor">Start Sculpting</a>
+    </div>
+  </section>
+
+  <section class="cta reveal">
+    <h2>Ready to start building?</h2>
+    <p>No install. No account. Just open the editor and place your first voxel.</p>
+    <a class="btn btn--primary btn--lg" href="/editor">Open Voxelith →</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__brand"><span class="nav__mark">◆</span> Voxelith</div>
+    <p class="footer__note">Built with React, Three.js &amp; a hand-written greedy mesher.
+      Imagery via <a href="https://unsplash.com?utm_source=voxelith&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a>.</p>
+    <p class="footer__copy">© <span id="year"></span> Voxelith. A browser-native voxel sculptor.</p>
+  </footer>
+
+  <script type="module" src="/src/landing/landing.ts"></script>
+</body>
+</html>
