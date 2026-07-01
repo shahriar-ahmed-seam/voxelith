@@ -9,7 +9,7 @@
 Place, paint and carve cubes on an infinite grid — with mirror symmetry, full undo
 history, a fast greedy-meshed renderer, and OBJ / glTF export. Inspired by MagicaVoxel.
 
-[**Open the Editor →**](https://voxelith.vercel.app/editor) · [Landing page](https://voxelith.vercel.app)
+[**Open the Editor →**](https://voxelith-blush.vercel.app/editor) · [Landing page](https://voxelith-blush.vercel.app)
 
 ![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=black)
 ![Three.js](https://img.shields.io/badge/Three.js-r183-000?logo=three.js&logoColor=white)
